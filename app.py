@@ -12,5 +12,5 @@ while True:
     cmd_by_usr = command[0]
 
     if cmd_by_usr == "add":
-        task_name = command[1]
+        task_name = " ".join(command[1:])
         db.insert_task(task_name)
