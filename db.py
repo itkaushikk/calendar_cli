@@ -16,3 +16,12 @@ def insert_task(task_name):
     cur.execute(insert_query)
     con.commit()
     con.close()
+
+def get_tasks():
+    con = sqlite3.connect("db.db")
+    cur = con.cursor()
+
+    res = cur.execute("SELECT * FROM TLST")
+    all_tasks = res.fetchall()
+
+    return all_tasks
