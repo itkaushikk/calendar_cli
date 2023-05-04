@@ -3,8 +3,8 @@ add "book read"
 
 add is command
 
-task_id | task_name | status
-00001   | book read | active
+task_id | task_name | status | date       |
+00001   | book read | active | yyyy-mm-dd |
 
 task_id - automatically programs takes previous task id and adds 1 to create new task id
 task_name - user inputs the details

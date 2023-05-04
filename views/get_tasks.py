@@ -6,7 +6,7 @@ def view_all_tasks():
     print("Task ID   | Task Description")
     print("-"*10 + " " + "-"*50)
     for val in all_tasks:
-        if val[2] == "Active":
+        if val[2] == "x":
             id = val[0]
             str_id = str(id)
             length_str_id = len(str_id)
