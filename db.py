@@ -11,7 +11,7 @@ def insert_task(task_name):
     else:
         task_id = 1
 
-    insert_query = """INSERT INTO TLST (TKID, TKNM, TKST) VALUES ({}, {}, 'Active')""".format(task_id, task_name)
+    insert_query = """INSERT INTO TLST (TKID, TKNM, TKST) VALUES ({}, {}, 'x')""".format(task_id, task_name)
 
     cur.execute(insert_query)
     con.commit()

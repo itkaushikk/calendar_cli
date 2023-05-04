@@ -1,0 +1,12 @@
+input
+add "book read"
+
+add is command
+
+task_id | task_name | status
+00001   | book read | active
+
+task_id - automatically programs takes previous task id and adds 1 to create new task id
+task_name - user inputs the details
+status - active(x) means the task is currently being done
+         inactive() means the task is currently not being done or completed
