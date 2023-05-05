@@ -2,6 +2,8 @@ import gui
 import db
 import views.get_tasks as gt
 
+import datetime
+
 while True:
     command = gui.ask()
 
@@ -13,6 +15,7 @@ while True:
 
     if cmd_by_usr == "add":
         task_name = " ".join(command[1:])
-        db.insert_task(task_name)
+        str_date = str(datetime.datetime.now().date())
+        db.insert_task(task_name, str_date)
     elif cmd_by_usr == "tasks":
         gt.view_all_tasks()
